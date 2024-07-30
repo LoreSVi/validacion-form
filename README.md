@@ -56,10 +56,4 @@ Utilización una expresión regular (`emailPattern`) para validar el formato bá
 
 Utilización de otra expresión regular (`contrasenaPattern`) para validar la contraseña. La contraseña debe tener entre 8 y 15 caracteres, al menos una letra minúscula, una letra mayúscula, un número y un carácter especial. Si la contraseña no cumple con el patrón, mostramos un mensaje de error y aplicamos la clase CSS correspondiente.
 
-
-    
-
-Si no hay mensajes de error en ninguno de los campos, procedemos a enviar el formulario. Utilizamos la función `add()` de Firestore para agregar un nuevo documento a la colección "users" en la base de datos de Firebase. El documento contiene los valores ingresados en los campos del formulario. Si el envío es exitoso, mostramos una alerta con un mensaje de éxito y restablecemos el formulario. Si ocurre algún error, mostramos una alerta con el mensaje de error.
-
-¡Y eso es todo! Ahora tienes un formulario de validación que guarda los datos en una base de datos de Firebase. Recuerda que debes tener configurada la parte HTML y CSS correspondiente, pero este README se enfoca en el código JavaScript. ¡Diviértete programando!
-# validacion-form
+Si no hay mensajes de error en ninguno de los campos, procedemos a enviar el formulario, devuelve una alerta de envío y resetea el formulario. 
